@@ -1,12 +1,13 @@
 # CodeQA-CodeT5
 
 ## Experiment on CodeT5
-The code is mainly copied from [CodeQA](https://github.com/jadecxliu/CodeQA/tree/main/codeBERT) with some minor adjustment.
+
+The code is mainly copied from [CodeQA](https://github.com/jadecxliu/CodeQA/tree/main/codeBERT) with some minor modification.
 
 ### Dependency
 
-- pip install torch
-- pip install transformers
+- pytorch
+- transformers
 
 ### Finetune
 
@@ -18,7 +19,8 @@ You can run the following scripts for finetuning a model for CodeQA using origin
 
 `bash python_script.sh [gpu-id] [model-name]`
 
-Moveover, you can run the following scripts for finetuning a model for CodeQA using a pre-trained CodeT5-based model(you should rename the model file as "pytorch_model.bin" and put the file under './models/my_pretrained_model/' or modify the load_model_path params before running the scripts):
+Or you can run the following scripts for finetuning a model for CodeQA using a pre-trained CodeT5-based model.
+(You should rename the model file as "pytorch_model.bin" and put the file under './models/my_pretrained_model/' or modify the load_model_path params before running the scripts):
 
 `bash java_script_use_pretrained.sh [gpu-id] [model-name]`
 
