@@ -26,6 +26,8 @@ We have Java and Python pre-training data for this task.
 Java Data -- [CodeSum_Data](https://github.com/xing-hu/TL-CodeSum)
 Python Data -- [Code_Docstring_Corpus](https://github.com/EdinburghNLP/code-docstring-corpus)
 
+You can get the dataset through the above repository, or through [our link](https://drive.google.com/drive/folders/1M7wVQB6ul6OUDpphQaQ7HT2VyEs30v3o?usp=sharing).
+
 We extract code-comment pairs in the above datasets, and change the data format to "train.code" and "train.comment" files. The data in './data' folder are all full data without preprocessing, so if you simply use these data to run the pre-training task, you will get much higher score on CodeQA compared to our results since the code snippets in these data cover part of code snippets in the test set.
 
 In our paper, we deduplicate the dataset, filter code-comment pairs with the same code snippet in the dev/test set, split the comment into sentences and remove all sentences which are not natural language. If you're interested, you can preprocess the data by yourself.
