@@ -1,7 +1,7 @@
 # CodeQA-CodeT5
 
 ## Experiment on CodeT5
-The code is mostly copied from [CodeQA](https://github.com/jadecxliu/CodeQA/tree/main/codeBERT) with some minor adjustment.
+The code is mainly copied from [CodeQA](https://github.com/jadecxliu/CodeQA/tree/main/codeBERT) with some minor adjustment.
 
 ### Dependency
 
